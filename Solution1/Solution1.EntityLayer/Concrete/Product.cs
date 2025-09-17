@@ -13,5 +13,9 @@ namespace Solution1.EntityLayer.Concrete
         public string ProductDescription { get; set; }
         public int ProductStock { get; set; }
         public decimal ProductPrice { get; set; }
+        public int CategoryId { get; set; } // Her ürünün ait olduğu bir kategori olmalı // Foreign Key
+        public  virtual Category Category { get; set; } // Herbir ürünün bir tane kategorisi olacak -- Bir kategorinin birden fazla ürünü olabilir
+        public List<Order> Orders { get; set; } // sipariş listesini dönecek 
+
     }
 }
