@@ -11,7 +11,7 @@ namespace NtierProjectDataAccessLayer.Context
     public class ProjectContext : DbContext // veritabanına yansıyacak sınıflar buraya eklenmeli
     {
         public DbSet<Category> Categories { get; set; }  // C# tarafında kullanılacak sınıf - sql e yansıyacak TABLO ismi yalın - çoğul hal
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; } 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Admin> Admins { get; set; }
