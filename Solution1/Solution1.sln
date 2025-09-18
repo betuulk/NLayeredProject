@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36429.23 d17.14
+VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "Solution1.EntityLayer\EntityLayer.csproj", "{94ADF1F9-08B0-46DB-A54C-75E12DCDB48E}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{8E795C53-7D1E-4E1A-BDD1-D8C5119557F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{95F27C5E-11E5-4D6C-B7D8-DB2503EF0ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_Project", "EF_Project\EF_Project.csproj", "{8308BF97-0E3E-4173-B0E5-4178223121AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{95F27C5E-11E5-4D6C-B7D8-DB2503EF0ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95F27C5E-11E5-4D6C-B7D8-DB2503EF0ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95F27C5E-11E5-4D6C-B7D8-DB2503EF0ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8308BF97-0E3E-4173-B0E5-4178223121AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8308BF97-0E3E-4173-B0E5-4178223121AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8308BF97-0E3E-4173-B0E5-4178223121AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8308BF97-0E3E-4173-B0E5-4178223121AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
