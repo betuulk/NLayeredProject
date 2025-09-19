@@ -1,2 +1,2 @@
 # NLayeredProject
-N katmanlı mimari .NET Framework
+N-tier architecture .NET Framework
