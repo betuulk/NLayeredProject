@@ -36,8 +36,32 @@ namespace EF_Project
 
         private void FormLocation_Load(object sender, EventArgs e)
         {
-            var guides = dbEntities.Guide.ToList();
-            comboBox1.DataSource = guides; // Db'den dönen koleksiyonu combobox'a bağladı
+            var guides=dbEntities.Guide.Select(x=> new
+            {
+                Fullname=x.GuideName +" "+ x.GuideSurname, x.GuideId //gösterim için 
+            }).ToList();
+            ///var guides = dbEntities.Guide.ToList();
+            
+            //Alttaki iki özellik string değerindedir.
+            //Verilen stringe göre class içerisinde o property'i (sütunu) buluyor
+            comboBoxGuide.DataSource = guides;
+            comboBoxGuide.DisplayMember = "Fullname";
+            comboBoxGuide.ValueMember = "GuideId"; 
+           
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Location location = new Location();
+            location.LocationCapacity =byte.Parse(nmrcCapacity.Value.ToString()); 
+            location.LocationCity = txtCity.Text;
+            location.LocationCountry = txtCountry.Text;
+            location.LocationPrice=decimal.Parse(txtPrice.Text);
+            location.DayNight= txtDayNight.Text;
+            location.GuideId = comboBoxGuide.SelectedIndex;
+            dbEntities.Location.Add(location);
+            dbEntities.SaveChanges();
+            
         }
     }
 }

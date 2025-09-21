@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSurname = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.lblCountry = new System.Windows.Forms.Label();
+            this.lblCity = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.lblCapacity = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblDayNight = new System.Windows.Forms.Label();
+            this.lblGuide = new System.Windows.Forms.Label();
+            this.nmrcCapacity = new System.Windows.Forms.NumericUpDown();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnGetById = new System.Windows.Forms.Button();
             this.btnList = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtDayNight = new System.Windows.Forms.TextBox();
+            this.comboBoxGuide = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrcCapacity)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtSurname
+            // txtCountry
             // 
-            this.txtSurname.Location = new System.Drawing.Point(133, 124);
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(162, 22);
-            this.txtSurname.TabIndex = 13;
+            this.txtCountry.Location = new System.Drawing.Point(133, 124);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(162, 22);
+            this.txtCountry.TabIndex = 13;
             // 
-            // txtName
+            // txtCity
             // 
-            this.txtName.Location = new System.Drawing.Point(133, 86);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(162, 22);
-            this.txtName.TabIndex = 14;
+            this.txtCity.Location = new System.Drawing.Point(133, 86);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(162, 22);
+            this.txtCity.TabIndex = 14;
             // 
             // txtId
             // 
@@ -84,83 +84,83 @@
             this.dataGridView1.Size = new System.Drawing.Size(705, 373);
             this.dataGridView1.TabIndex = 12;
             // 
-            // label3
+            // lblCountry
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(83, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Ülke : ";
+            this.lblCountry.AutoSize = true;
+            this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCountry.Location = new System.Drawing.Point(83, 124);
+            this.lblCountry.Name = "lblCountry";
+            this.lblCountry.Size = new System.Drawing.Size(51, 16);
+            this.lblCountry.TabIndex = 4;
+            this.lblCountry.Text = "Ülke : ";
             // 
-            // label2
+            // lblCity
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(79, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Şehir : ";
+            this.lblCity.AutoSize = true;
+            this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCity.Location = new System.Drawing.Point(79, 86);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(55, 16);
+            this.lblCity.TabIndex = 5;
+            this.lblCity.Text = "Şehir : ";
             // 
-            // label1
+            // lblId
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(35, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 16);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Lokasyon Id: ";
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblId.Location = new System.Drawing.Point(35, 48);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(99, 16);
+            this.lblId.TabIndex = 6;
+            this.lblId.Text = "Lokasyon Id: ";
             // 
-            // label4
+            // lblCapacity
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(54, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Kapasite : ";
+            this.lblCapacity.AutoSize = true;
+            this.lblCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCapacity.Location = new System.Drawing.Point(54, 162);
+            this.lblCapacity.Name = "lblCapacity";
+            this.lblCapacity.Size = new System.Drawing.Size(80, 16);
+            this.lblCapacity.TabIndex = 4;
+            this.lblCapacity.Text = "Kapasite : ";
             // 
-            // label5
+            // lblPrice
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(81, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Fiyat : ";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPrice.Location = new System.Drawing.Point(81, 200);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(53, 16);
+            this.lblPrice.TabIndex = 4;
+            this.lblPrice.Text = "Fiyat : ";
             // 
-            // label6
+            // lblDayNight
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(47, 238);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 16);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Gün Gece : ";
+            this.lblDayNight.AutoSize = true;
+            this.lblDayNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDayNight.Location = new System.Drawing.Point(47, 238);
+            this.lblDayNight.Name = "lblDayNight";
+            this.lblDayNight.Size = new System.Drawing.Size(87, 16);
+            this.lblDayNight.TabIndex = 4;
+            this.lblDayNight.Text = "Gün Gece : ";
             // 
-            // label7
+            // lblGuide
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(64, 276);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 16);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Rehber : ";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lblGuide.AutoSize = true;
+            this.lblGuide.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGuide.Location = new System.Drawing.Point(64, 276);
+            this.lblGuide.Name = "lblGuide";
+            this.lblGuide.Size = new System.Drawing.Size(70, 16);
+            this.lblGuide.TabIndex = 4;
+            this.lblGuide.Text = "Rehber : ";
+            this.lblGuide.Click += new System.EventHandler(this.label7_Click);
             // 
-            // numericUpDown1
+            // nmrcCapacity
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(133, 160);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(162, 22);
-            this.numericUpDown1.TabIndex = 16;
+            this.nmrcCapacity.Location = new System.Drawing.Point(133, 160);
+            this.nmrcCapacity.Name = "nmrcCapacity";
+            this.nmrcCapacity.Size = new System.Drawing.Size(162, 22);
+            this.nmrcCapacity.TabIndex = 16;
             // 
             // btnUpdate
             // 
@@ -206,6 +206,7 @@
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -218,39 +219,39 @@
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 197);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 22);
-            this.textBox1.TabIndex = 13;
+            this.txtPrice.Location = new System.Drawing.Point(133, 197);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(162, 22);
+            this.txtPrice.TabIndex = 13;
             // 
-            // textBox2
+            // txtDayNight
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 238);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 22);
-            this.textBox2.TabIndex = 13;
+            this.txtDayNight.Location = new System.Drawing.Point(133, 238);
+            this.txtDayNight.Name = "txtDayNight";
+            this.txtDayNight.Size = new System.Drawing.Size(162, 22);
+            this.txtDayNight.TabIndex = 13;
             // 
-            // comboBox1
+            // comboBoxGuide
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(133, 276);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 24);
-            this.comboBox1.TabIndex = 17;
+            this.comboBoxGuide.FormattingEnabled = true;
+            this.comboBoxGuide.Location = new System.Drawing.Point(133, 276);
+            this.comboBoxGuide.Name = "comboBoxGuide";
+            this.comboBoxGuide.Size = new System.Drawing.Size(162, 24);
+            this.comboBoxGuide.TabIndex = 17;
             // 
             // FormLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1122, 623);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txtSurname);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.comboBoxGuide);
+            this.Controls.Add(this.nmrcCapacity);
+            this.Controls.Add(this.txtDayNight);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtCountry);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnGetById);
@@ -258,18 +259,18 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnList);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblGuide);
+            this.Controls.Add(this.lblDayNight);
+            this.Controls.Add(this.lblPrice);
+            this.Controls.Add(this.lblCapacity);
+            this.Controls.Add(this.lblCountry);
+            this.Controls.Add(this.lblCity);
+            this.Controls.Add(this.lblId);
             this.Name = "FormLocation";
             this.Text = "FormLocation";
             this.Load += new System.EventHandler(this.FormLocation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrcCapacity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,25 +278,25 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtSurname;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtCountry;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label lblCountry;
+        private System.Windows.Forms.Label lblCity;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label lblCapacity;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblDayNight;
+        private System.Windows.Forms.Label lblGuide;
+        private System.Windows.Forms.NumericUpDown nmrcCapacity;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnGetById;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtDayNight;
+        private System.Windows.Forms.ComboBox comboBoxGuide;
     }
 }
