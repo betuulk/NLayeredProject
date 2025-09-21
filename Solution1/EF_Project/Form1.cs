@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace EF_Project
 {
-    public partial class Form1 : Form
+    public partial class FormGuide : Form
     {
         EntityFrameworkTravelDbEntities dbEntities = new EntityFrameworkTravelDbEntities();
-        public Form1()
+        public FormGuide()
         {
             InitializeComponent();
         }

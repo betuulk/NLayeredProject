@@ -1,6 +1,6 @@
 ﻿namespace EF_Project
 {
-    partial class Form1
+    partial class FormGuide
     {
         /// <summary>
         /// Required designer variable.
@@ -167,7 +167,7 @@
             this.btnGetById.UseVisualStyleBackColor = false;
             this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
-            // Form1
+            // FormGuide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,7 +184,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FormGuide";
             this.Text = "Rehber İşlemleri";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
