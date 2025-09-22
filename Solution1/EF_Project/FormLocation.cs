@@ -58,10 +58,30 @@ namespace EF_Project
             location.LocationCountry = txtCountry.Text;
             location.LocationPrice=decimal.Parse(txtPrice.Text);
             location.DayNight= txtDayNight.Text;
-            location.GuideId = comboBoxGuide.SelectedIndex;
+            location.GuideId = int.Parse(comboBoxGuide.SelectedValue.ToString());
             dbEntities.Location.Add(location);
             dbEntities.SaveChanges();
-            
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtId.Text);
+            var deleted = dbEntities.Location.Find(id);
+            dbEntities.Location.Remove(deleted);
+            dbEntities.SaveChanges();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int id= int.Parse(txtId.Text);
+            var updated=dbEntities.Location.Find(id);
+            updated.LocationCapacity = byte.Parse(nmrcCapacity.Value.ToString());
+            updated.LocationCity = txtCity.Text;
+            updated.LocationCountry = txtCountry.Text;
+            updated.LocationPrice = decimal.Parse(txtPrice.Text);
+            updated.DayNight = txtDayNight.Text;
+            updated.GuideId = int.Parse(comboBoxGuide.SelectedValue.ToString());
+            dbEntities.SaveChanges();
         }
     }
 }
