@@ -16,7 +16,7 @@ namespace EF_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLocation());
+            Application.Run(new FormStatistics());
         }
     }
 }
