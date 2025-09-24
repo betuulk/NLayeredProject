@@ -11,3 +11,4 @@ namespace NtierProjectDataAccessLayer.Abstract
     {
     }
 }
+// bu sınıflara ait interfaceler ile bağımlılığı azaltmış oluyoruz 

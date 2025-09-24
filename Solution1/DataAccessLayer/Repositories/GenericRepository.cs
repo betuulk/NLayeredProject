@@ -6,7 +6,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+ 
 namespace NtierProjectDataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
@@ -19,27 +19,33 @@ namespace NtierProjectDataAccessLayer.Repositories
         }
         public void Delete(T entity)
         {
-          
+          var deletedEntity=context.Entry(entity);  // Entry DbSet içerisinde hazır gelen bir metot - Entry üzerinden ilgili nesnenin durumu(State) görülebilir
+          deletedEntity.State = EntityState.Deleted;
+          context.SaveChanges();
         }
-
+        // Entity Frameork her nesne için bir durum tutar 
         public List<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _object.ToList();
         }
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return _object.Find(id);  //_object zaten DbSet türünde 
         }
 
         public void Insert(T entity)
         {
-            throw new NotImplementedException();
+            var addedEntity=context.Entry(entity); // eklenecek entity durumu alındı
+            addedEntity.State=EntityState.Added;
+            context.SaveChanges();  
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            var updatedEntity = context.Entry(entity); // eklenecek entity durumu alındı
+            updatedEntity.State = EntityState.Modified;
+            context.SaveChanges();
         }
     }
 }
