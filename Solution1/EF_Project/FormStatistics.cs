@@ -21,7 +21,7 @@ namespace EF_Project
         private void FormStatistics_Load(object sender, EventArgs e)
         {
             #region Toplam Lokasyon Sayısı
-            labelLocationCount.Text = dbEntities.Location.Count().ToString();
+            labelLocationCount.Text = dbEntities.Location.Count().ToString(); 
             #endregion
             labelTotalCapacity.Text = dbEntities.Location.Sum(x => x.LocationCapacity).ToString();
             labelGuideCount.Text = dbEntities.Guide.Count().ToString();
