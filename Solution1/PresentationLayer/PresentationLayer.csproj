@@ -95,6 +95,14 @@
       <Project>{8e795c53-7d1e-4e1a-bdd1-d8c5119557f9}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{966670B0-BDEA-4539-BBFC-44ED35614029}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Solution1.EntityLayer\EntityLayer.csproj">
+      <Project>{94ADF1F9-08B0-46DB-A54C-75E12DCDB48E}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

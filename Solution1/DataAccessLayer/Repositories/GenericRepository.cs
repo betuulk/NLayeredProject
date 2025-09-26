@@ -12,10 +12,10 @@ namespace NtierProjectDataAccessLayer.Repositories
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         ProjectContext context = new ProjectContext();
-        DbSet<T> _object;  // field readonly
+        DbSet<T> _object;  // field readonly 
         public GenericRepository()   //constructor
         {
-            _object=context.Set<T>();
+            _object=context.Set<T>(); //veritabanı ile iletişimi kuruyor ilgili entity tablosunu tutuyor 
         }
         public void Delete(T entity)
         {
