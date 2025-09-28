@@ -1,4 +1,5 @@
-﻿using Solution1.EntityLayer.Concrete;
+﻿using BusinessLayer.DTOs;
+using Solution1.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace BusinessLayer.Abstract
 {
     public interface IProductService:IGenericService<Product>
     {
+        List<ProductDto> BGetProductsWithCategory();
     }
 }

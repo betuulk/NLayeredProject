@@ -9,5 +9,7 @@ namespace NtierProjectDataAccessLayer.Abstract
 {
     public interface IProductDal:IGenericDal<Product>
     {
+        List<Product> GetProductsWithCategory();
+        //Entity'e özel method yazılabilir 
     }
 }

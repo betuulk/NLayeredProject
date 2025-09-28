@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using BusinessLayer.DTOs;
 using NtierProjectDataAccessLayer.Abstract;
 using Solution1.EntityLayer.Concrete;
 using System;
@@ -39,6 +40,20 @@ namespace BusinessLayer.Concrete
         public void BUpdate(Product entity)
         {
             _productDal.Update(entity);
+        }
+
+        List<ProductDto> IProductService.BGetProductsWithCategory()
+        {
+            var products = _productDal.GetProductsWithCategory();
+            return products.Select(x => new ProductDto
+            {
+                ProductId = x.ProductId,
+                ProductName = x.ProductName,
+                ProductStock = x.ProductStock,
+                ProductPrice = x.ProductPrice,
+                ProductDescription = x.ProductDescription,
+                CategoryName = x.Category.CategoryName
+            }).ToList();
         }
     }
 }

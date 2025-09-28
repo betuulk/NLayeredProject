@@ -54,7 +54,7 @@ namespace PresentationLayer
             var value= _categoryService.BGetById(int.Parse(textBox2.Text));
             ///dataGridView1.DataSource = value;
             ///BGetById tek bir Category nesnesi dönüyor, yani bir obje.
-            ///Yani tek nesne verince DataGridView “liste yok” gibi davranıyor ve ekrana bir şey göstermiyor.
+            ///Yani tek nesne verince DataGridView “liste yok” gibi davranıyor ve ekrana bir şey göstermiyor. 
             dataGridView1.DataSource = new List<Category> { value };
 
         }
