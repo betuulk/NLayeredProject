@@ -34,11 +34,13 @@ namespace PresentationLayer
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            var addedValue = new Product();
-            addedValue.ProductStock=int.Parse(textBoxStock.Text);
-            addedValue.ProductName=textBoxName.Text;
-            addedValue.ProductPrice = decimal.Parse(textBoxPri.Text);
-            addedValue.ProductDescription=textBoxDesc.Text;
+            var addedProduct = new Product();
+            addedProduct.ProductStock=int.Parse(textBoxStock.Text);
+            addedProduct.ProductName=textBoxName.Text;
+            addedProduct.ProductPrice = decimal.Parse(textBoxPri.Text);
+            addedProduct.ProductDescription=textBoxDesc.Text;
+            addedProduct.CategoryId=comboBoxCategory.SelectedIndex;
+            _productService.BInsert(addedProduct);
 
         }
 
@@ -57,7 +59,13 @@ namespace PresentationLayer
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            var updatedValue= _productService.BGetById(int.Parse(textBoxId.Text));
+            updatedValue.ProductDescription=textBoxDesc.Text;
+            updatedValue.ProductPrice=decimal.Parse(textBoxPri.Text); //textbox boşken patlıyor bakılacak!
+            updatedValue.ProductStock= int.Parse(textBoxStock.Text);
+            updatedValue.ProductName=textBoxName.Text;
+            _productService.BUpdate(updatedValue);
+            MessageBox.Show("okey");
         }
 
         private void FormProduct_Load(object sender, EventArgs e)
@@ -66,6 +74,13 @@ namespace PresentationLayer
             comboBoxCategory.DisplayMember= "CategoryName"; // Combobox içerisinde gözükecek değer CATEGORY TABLOSUNDAKİ ALAN İLE AYNI YAZILMALI
             comboBoxCategory.ValueMember= "CategoryId";      // Seçilen değer aslında Id olarak alınıyor
             comboBoxCategory.DataSource= categories;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var IdValue = int.Parse(textBoxId.Text);
+            var entity=_productService.BGetById(IdValue);
+            dataGridView1.DataSource = new List<Product> { entity };
         }
     }
 }
