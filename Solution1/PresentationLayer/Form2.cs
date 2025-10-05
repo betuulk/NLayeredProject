@@ -17,11 +17,13 @@ namespace PresentationLayer
     public partial class FormProduct : Form
     {
         private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
         public FormProduct()
         {
             InitializeComponent();
             _productService = new ProductManager(new EfProductDal());
             //Burada Service yani Managerdaki metodlar çağırılarak işlem yapılacak, manager da DI kullanarak EfProductDal nesnesi ile erişecek DB'ye
+            _categoryService= new CategoryManager(new EfCategoryDal());        
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,6 +46,26 @@ namespace PresentationLayer
         {
             var ProductList = _productService.BGetProductsWithCategory();
             dataGridView1.DataSource= ProductList;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int id=int.Parse(textBoxId.Text);
+            var deletedEntity = _productService.BGetById(id);
+            _productService.BDelete(deletedEntity);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormProduct_Load(object sender, EventArgs e)
+        {
+            var categories = _categoryService.BGetAll();
+            comboBoxCategory.DisplayMember= "CategoryName"; // Combobox içerisinde gözükecek değer CATEGORY TABLOSUNDAKİ ALAN İLE AYNI YAZILMALI
+            comboBoxCategory.ValueMember= "CategoryId";      // Seçilen değer aslında Id olarak alınıyor
+            comboBoxCategory.DataSource= categories;
         }
     }
 }

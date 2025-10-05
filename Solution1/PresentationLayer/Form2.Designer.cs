@@ -84,6 +84,7 @@
             this.button4.TabIndex = 14;
             this.button4.Text = "GÜNCELLE";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -96,6 +97,7 @@
             this.button3.TabIndex = 15;
             this.button3.Text = "SİL";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // buttonAdd
             // 
@@ -229,9 +231,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(257, 339);
+            this.button2.Location = new System.Drawing.Point(244, 333);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(75, 35);
             this.button2.TabIndex = 20;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -264,6 +266,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormProduct";
             this.Text = "FormProduct";
+            this.Load += new System.EventHandler(this.FormProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
